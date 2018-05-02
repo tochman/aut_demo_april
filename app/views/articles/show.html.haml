@@ -1,0 +1,11 @@
+%h1= @article.title
+%p= @article.content
+
+= form_with scope: :comment, url: article_comments_path(@article) do |form|
+    = form.label :body
+    = form.text_area :body
+    = form.submit
+
+- if @article.comments.any? 
+    - @article.comments.each do |comment|
+        %p= comment.body
