@@ -21,6 +21,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara', '~> 2.18'
+  gem 'launchy'
 end
 
 group :development do
