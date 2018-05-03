@@ -11,3 +11,4 @@
 - if @article.comments.any? 
     - @article.comments.each do |comment|
         %p= comment.body
+        %p= "Submitted by: #{comment.email}"
