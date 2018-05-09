@@ -1,3 +1,4 @@
+= link_to "Become subscriber", new_subscription_path
 - @articles.each do |article|
     %h1= link_to article.title, article_path(article)
     %p= article.content

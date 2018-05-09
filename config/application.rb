@@ -30,5 +30,8 @@ module AutDemoApril
       generate.view_specs false
       generate.system_tests false
     end
+    config.stripe.secret_key = 'sk_test_CKx49b0AfJFRS9oIIenegFpN'
+    config.stripe.publishable_key = 'pk_test_QicERB8w3kyqaYW3hUUQylRH'
+    config.stripe.endpoint = '/payment/stripe-integration'
   end
 end

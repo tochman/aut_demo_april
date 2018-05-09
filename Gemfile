@@ -11,6 +11,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails'
+gem 'devise'
+gem 'stripe-rails'
 
 group :development, :test do
   gem 'pry-byebug'
@@ -22,6 +24,8 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara', '~> 2.18'
   gem 'launchy'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :development do
